@@ -27,7 +27,11 @@ jobs:
 
       - name: "Install Python build dependencies"
         run: |
-          pip install wheel
+          pip install wheel nox
+
+      - name: "Compile locales"
+        run: |
+          nox locales_compile
 
       - name: "Build source distribution"
         run: |
