@@ -25,6 +25,10 @@ jobs:
         with:
           python-version: 3.9
 
+      - name: "Install Python build dependencies"
+        run: |
+          pip install wheel
+
       - name: "Build source distribution"
         run: |
           python setup.py sdist
