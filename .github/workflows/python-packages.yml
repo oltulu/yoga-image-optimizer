@@ -31,7 +31,7 @@ jobs:
 
       - name: "Compile locales"
         run: |
-          nox locales_compile
+          nox -s locales_compile
 
       - name: "Build source distribution"
         run: |
