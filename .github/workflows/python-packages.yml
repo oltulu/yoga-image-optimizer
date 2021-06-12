@@ -20,6 +20,10 @@ jobs:
         with:
           submodules: true
 
+      - name: "Install build dependencies"
+        run: |
+          sudo apt-get install -y gettext
+
       - name: "Set up Python"
         uses: actions/setup-python@v1
         with:
